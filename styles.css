@@ -24,15 +24,6 @@ a{
     box-shadow: 0 0 10px #000000;
 }
 
-section {
-    background-color: #e59019;
-    position: relative;
-    top: 100px;
-    padding-top: 20px;
-    padding-left: 240px;
-    padding-right: 240px;
-}
-
 .titulologo{
     font-size: 30px;
     position: absolute;
@@ -65,6 +56,16 @@ ul li{
     margin-right: 50px;
 }
 
+.Scontexto {
+    background-color: #e59019;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    padding-top: 20px;
+    padding-left: 240px;
+    padding-right: 240px;
+}
+
 .Tcontexto {
     color: #fff;
     font-size: 64px;
@@ -78,40 +79,10 @@ ul li{
 
 .contexto {
     font-weight: bold;
-    text-align: center;
-    justify-content: right;
+    margin: 10px;
     font-size: 24px;
     color: #333;
 }
-
-.context-wrapper {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.context-heading {
-    color: #4a4a4a;
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-.context-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.context-content p {
-    font-size: 1.2em;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.context-image {
-    width: 240px;
-    height: 240px;
-}
-
 .img-logo {
     width: 80px; height: 80px;
     max-width: 100%; 
