@@ -4,155 +4,126 @@ body {
     color: #333;
     background-color: #fff;
     margin: 0;
-
-}
-
-a{
+  }
+  
+  a {
     text-decoration: none;
-}
-
-.header{
+  }
+  
+  .header {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 10;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px;
     background-color: #fff;
-    box-shadow: 2px;
     box-shadow: 0 0 10px #000000;
-}
-
-.titulologo{
-    font-size: 30px;
-    position: absolute;
-    left: 115px
-}
-
-.titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.titulologo2 {
-    color: #e59019;
-}
-
-.titulologo, .Ncontexto, .nicho, .proposta_de_valor {
+  }
+  
+  .titulologo {
+    font-size: 36px;
     color: #333;
-}
-
-nav ul{
+    position: absolute;
+    left: 115px;
+  }
+  
+  .titulologo2 {
+    color: #e59019;
+  }
+  
+  .titulologo, .header li a { /* Agrupa o seletor para evitar repetição */
+    color: #333;
+  }
+  
+  nav ul {
     display: flex;
-    align-items: center;
-    list-style:none;
-}
-
-ul li{
+    list-style: none;
+  }
+  
+  ul li {
     font-weight: bold;
     font-size: 24px;
     margin-right: 50px;
-}
-
-.Scontexto {
+  }
+  
+  .img-logo {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .Scontexto, .Sproposta {
     background-color: #e59019;
-    text-align: center;
+    text-align: left;
     position: relative;
     top: 100px;
-    padding-top: 20px;
-    padding-left: 240px;
-    padding-right: 240px;
-}
-
-.Tcontexto {
-    color: #fff;
-    font-size: 64px;
-    margin-bottom: 0;
-}
-
-.Imagecontexto{
-    width: 240px; 
-    height: 240px;
-}
-
-.contexto {
-    font-weight: bold;
-    margin: 10px;
-    font-size: 24px;
-    color: #333;
-}
-
-.Snicho {
+    padding: 40px;
+  }
+  
+  .Snicho {
     background-color: #fff;
-    text-align: center;
+    text-align: left;
     position: relative;
     top: 90px;
-    padding-top: 20px;
-    padding-left: 240px;
-    padding-right: 240px;
-}
-
-.Tnicho {
+    padding: 20px;
+  }
+  
+.Tnicho{
     color: #e59019;
-    font-size: 64px;
-    margin-bottom: 0;
-}
-
-.Imagenicho{
-    width: 240px; 
-    height: 240px;
-}
-
-.nicho {
-    font-weight: bold;
-    margin: 10px;
-    font-size: 24px;
-    color: #333;
-}
-
-.Sproposta {
-    background-color: #e59019;
+    font-size: 40px;
+    margin-bottom: 20px;
     text-align: center;
-    position: relative;
-    top: 100px;
-    padding-top: 20px;
-    padding-left: 240px;
-    padding-right: 240px;
 }
-
-.Tproposta {
+  .conteudo-secao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .texto-secao {
+    flex: 1 1 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .imagem-secao {
+    flex: 1 1 40%;
+    padding-left: 300px; /* Ajusta o espaçamento à esquerda da imagem */
+  }
+  
+  .Scontexto h1, .Sproposta h1 {
     color: #fff;
-    font-size: 64px;
-    margin-bottom: 0;
-}
-
-.Imageproposta{
-    width: 360px; 
-    height: 360px;
-}
-
-.proposta {
-    font-weight: bold;
-    margin: 10px;
-    font-size: 24px;
-    color: #333;
-}
-
-.img-logo {
-    width: 80px; height: 80px;
-    max-width: 100%; 
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .imagem-secao img {
+    max-width: 100%;
     height: auto;
-    display: block;
-    left: 180px;
-}
-
-footer {
+  }
+  
+  .contexto, .nicho, .proposta {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  footer {
+    font-weight: bold;
+    font-size: 24px;
     position: relative;
     margin-top: 100px;
-}
-
-.teste {
-    margin-left: 10px;
-}
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 0 10px #000000;
+  }
+  
