@@ -1,129 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Meera+Inimai&display=swap');
+
 body {
-    font-family: Helvetica;
-    text-align: center;
-    color: #333;
-    background-color: #fff;
+    font-family: 'Meera Inimai', sans-serif;
     margin: 0;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  .header {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ccf0cc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    font-family: 'Jua', sans-serif;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 100;
+    box-shadow: 0 10px 8px -10px #808080;
+}
+
+.logo {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    background-color: #fff;
-    box-shadow: 0 0 10px #000000;
-  }
-  
-  .titulologo {
-    font-size: 36px;
-    color: #333;
-    position: absolute;
-    left: 115px;
-  }
-  
-  .titulologo2 {
-    color: #e59019;
-  }
-  
-  .titulologo, .header li a { /* Agrupa o seletor para evitar repetição */
-    color: #333;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-  }
-  
-  ul li {
-    font-weight: bold;
-    font-size: 24px;
-    margin-right: 50px;
-  }
-  
-  .img-logo {
-    width: 80px;
+}
+
+.logo img {
     height: 80px;
-  }
-  
-  .Scontexto, .Sproposta {
-    background-color: #e59019;
-    text-align: left;
-    position: relative;
-    top: 100px;
-    padding: 40px;
-  }
-  
-  .Snicho {
-    background-color: #fff;
-    text-align: left;
-    position: relative;
-    top: 90px;
-    padding: 20px;
-  }
-  
-.Tnicho{
-    color: #e59019;
-    font-size: 40px;
-    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.logo .mais {
+    color: #7DB283;
+    margin: 0 5px;
+}
+
+.nav-button-container {
+    display: flex;
+    align-items: center;
+}
+
+.sobre:hover, .interface:hover, .recursos:hover {
+    font-size: 28px;
+    transform: scale(1.1);
+    color: #000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+}
+
+.botao.download {
+    background-color: #7DB283;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-family: 'Jua', sans-serif;
+    font-size: 24px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.botao.download:hover {
+    background-color: #7DB283;
+    transform: scale(1.1);
+}
+
+.hero {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+    padding-top: 120px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+    margin-top: 75px;
+}
+
+.hero p {
+    font-size: 48px;
+}
+
+.sobre-section {
+    background-color: #ccf0cc;
+    padding: 40px 20px;
     text-align: center;
 }
-  .conteudo-secao {
+
+.sobre-section h2 {
+    font-size: 48px;
+    font-family: 'Jua', sans-serif;
+    color: #7DB283;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.sobre-section .sobre-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .texto-secao {
-    flex: 1 1 40%;
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.sobre-section .sobre-content p {
+    flex: 1;
+    margin: 0;
+    padding-right: 20px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.sobre-section .sobre-content img {
+    height: 250px;
+    margin-left: 20px;
+}
+
+.three-columns {
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.three-columns div {
+    width: 30%;
+}
+
+.three-columns h2 {
+    font-weight: normal;
+    font-size: 42px;
+    font-family: 'Jua', sans-serif;
+    color: #7DB283;
+}
+
+.three-columns p {
+    flex: 1;
+    padding-left: 120px;
+    max-width: 300px;
+    line-height: 24px;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: 'Jua', sans-serif;
+    color: #000;
+}
+
+.three-columns img {
+    height: 150px;
+    background-color: #ccf0cc;
+    padding: 5px 10px;
+    cursor: normal;
+    border-radius: 10px;
+}
+
+.three-columns img:hover {
+    font-size: 28px;
+    transform: scale(1.1);
+    color: #000;
+}
+
+.recursos-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.recursos-icons div {
+    text-align: center;
+}
+
+footer {
+    font-family: 'Jua', sans-serif;
+    background-color: #ccf0cc;
+    text-align: center;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .imagem-secao {
-    flex: 1 1 40%;
-    padding-left: 300px; /* Ajusta o espaçamento à esquerda da imagem */
-  }
-  
-  .Scontexto h1, .Sproposta h1 {
-    color: #fff;
-    font-size: 40px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .imagem-secao img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .contexto, .nicho, .proposta {
-    font-weight: bold;
-    margin-bottom: 20px;
-    font-size: 18px;
-    color: #333;
-  }
-  
-  footer {
-    font-weight: bold;
-    font-size: 24px;
-    position: relative;
-    margin-top: 100px;
-    background-color: #fff;
-    color: #333;
-    text-align: center;
-    padding: 10px 0;
-    box-shadow: 0 0 10px #000000;
-  }
-  
+}
+
+footer p {
+    font-size: 16px;
+}
