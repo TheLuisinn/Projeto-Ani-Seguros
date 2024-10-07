@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1011/1011863.png">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <title>Calculadora - Avaliação N2</title>
+</head>
+<body>
+    <header>
+        <div class="buttondiv">
+            <button class = "diurno"> Modo Diurno </button>
+        </div>
+        <div class="titlediv">
+            <h1 class = "title">🖩 Calculadora 🖩</h1>
+        </div>
+        <div class="buttondiv">
+            <button class = "noturno"> Modo Noturno </button>
+        <div>
+    </header>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Afacad Flux", sans-serif;
+    background-color: #555;
+}
+
+header {
+    background-color: #444;
+    text-align: center;
+    align-items: center;
+    padding: 15px 0;
+}
+.title {
+    color: #fff;
+    font-size: 48px;
+}
+
+button {
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+.titlediv {
+    display: inline-flex;
+}
+
+.diurno {
+    margin: 0 25px;
+    margin-right: 25px;
+}
+
+.noturno {
+    margin: 0 25px;
+    margin-left: 25px;
+}
+
+div {
+    display: inline-flex;
+}
+
+.buttondiv {
+    justify-content: center;
+    margin-bottom: 10px;
+}
